@@ -1,0 +1,29 @@
+
+= chrome-extension-starter
+
+
+== Description
+
+
+== Installation
+
+=== Archive Installation
+
+	rake install
+
+=== Gem Installation
+
+	gem install chromeextensionstarter
+
+
+== Features/Problems
+
+
+== Synopsis
+
+
+== Copyright
+
+Author::    gorou <gorou@>
+Copyright:: Copyright (c) 2009 gorou
+License::   
