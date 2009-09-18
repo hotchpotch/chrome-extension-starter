@@ -9,12 +9,13 @@
 
 === Archive Installation
 
-	rake install
+ rake install
 
 === Gem Installation
 
-	gem install chromeextensionstarter
-
+ gem sources -a http://gems.github.com
+ gem install zipruby json Constellation-crxmake Constellation-jsonschema
+ gem install hotchpotch-chromeextensionstarter
 
 == Features/Problems
 
@@ -24,6 +25,6 @@
 
 == Copyright
 
-Author::    gorou <gorou@>
-Copyright:: Copyright (c) 2009 gorou
-License::   
+Author::    hotchpotch <hotchpotch@gmail.com>
+Copyright:: Copyright (c) 2009 hotchpotch
+License:: MIT License
