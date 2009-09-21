@@ -4,7 +4,6 @@
 
 == Description
 
-
 == Installation
 
 === Archive Installation
@@ -14,14 +13,17 @@
 === Gem Installation
 
  gem sources -a http://gems.github.com
- gem install zipruby json Constellation-crxmake Constellation-jsonschema
- gem install hotchpotch-chromeextensionstarter
+ gem install zipruby json Constellation-crxmake uuidtools
+ gem install hotchpotch-chrome-extension-starter
 
 == Features/Problems
 
 
 == Synopsis
 
+ chrome-extension-starter myextension
+ cd myextension
+ rake
 
 == Copyright
 

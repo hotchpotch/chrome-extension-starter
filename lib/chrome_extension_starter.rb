@@ -2,6 +2,7 @@
 require 'pathname'
 require 'fileutils'
 require 'erb'
+require 'rubygems'
 require 'uuidtools'
 
 class ChromeExtensionStarter
