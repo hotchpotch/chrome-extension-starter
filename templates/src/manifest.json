@@ -10,7 +10,7 @@
     "file://*",
     "tabs"
   ],
-  "background_page": "background.html",
+  "background_page": "background/background.html",
   "toolstrips": [
     "toolstrips/toolstrip.html"
   ]
