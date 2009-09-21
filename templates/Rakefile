@@ -1,1 +1,14 @@
 
+require 'rubygems'
+require 'rake'
+require 'rake/clean'
+
+PROJECT_NAME = '<%= target_name %>'
+GITHUB_ACCOUNT = 'yourname'
+GITHUB_PROJECT_NAME = "#{PROJECT_NAME}"
+
+CLEAN.include ['**/.*.sw?', '*.gem', '.config']
+
+task :manifest do
+  Json
+end

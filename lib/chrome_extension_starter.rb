@@ -26,7 +26,7 @@ class ChromeExtensionStarter
 
   def generate_templates(target_path, template_path)
     FileUtils.cp_r template_path.to_s, target_path.to_s
-    Pathname.glob(template_path.to_s + "**/*") do |f|
+    Pathname.glob(target_path.to_s + "**/*") do |f|
       next unless f.file?
       f.open("r+") do |f|
         target_name = @target_name

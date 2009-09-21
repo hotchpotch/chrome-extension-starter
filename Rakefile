@@ -58,6 +58,7 @@ spec = Gem::Specification.new do |s|
   s.autorequire       = ""
   s.test_files        = Dir["test/*_test.rb"]
 
+  s.add_dependency('rake')
   s.add_dependency('jsonschema')
   s.add_dependency('json')
   s.add_dependency('crxmake')
