@@ -3,11 +3,10 @@
   "id": "<%= uuid %>",
   "description": "my extention",
   "version": "0.0.1",
-  "update_url": "$UPDATE_URL$",
+  "update_url": "http://localhost/example/update.xml",
   "permissions": [
     "http://*/",
     "https://*/",
-    "file://*",
     "tabs"
   ],
   "background_page": "background/background.html",
