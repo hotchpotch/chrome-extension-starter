@@ -1,0 +1,40 @@
+{
+  "name": "<%= target_name %>",
+  "id": "<%= uuid %>",
+  "description": "my extention",
+  "version": "0.0.1",
+  "update_url": "$UPDATE_URL$",
+  "permissions": [
+    "http://*/",
+    "https://*/",
+    "file://*",
+    "tabs"
+  ],
+  "background_page": "background.html",
+  "toolstrips": [
+    "toolstrips/toolstrip.html"
+  ]
+  // "content_scripts": [
+  //   {
+  //     "run_at": "document_start",
+  //     "js": [
+  //       "content/main.js"
+  //     ],
+  //     "css": [
+  //       "content/main.css"
+  //     ],
+  //     "matches": [
+  //       "http://*/*",
+  //       "https://*/*",
+  //       "file://*"
+  //     ]
+  //   }
+  // ],
+  // "page_actions": [
+  //   {
+  //     "id": "<%= target_name %>_page_action",
+  //     "name": "<%= target_name %>_page_action",
+  //     "icons": ["images/icon.png"]
+  //   }
+  // ]
+}

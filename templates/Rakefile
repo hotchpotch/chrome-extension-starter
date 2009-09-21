@@ -2,13 +2,48 @@
 require 'rubygems'
 require 'rake'
 require 'rake/clean'
-
-PROJECT_NAME = '<%= target_name %>'
-GITHUB_ACCOUNT = 'yourname'
-GITHUB_PROJECT_NAME = "#{PROJECT_NAME}"
+require 'json/pure'
+require 'pathname'
 
 CLEAN.include ['**/.*.sw?', '*.gem', '.config']
 
-task :manifest do
-  Json
+project_name = '<%= target_name %>'
+github_account = `git config github.user`.chomp # 'yourname'
+github_project = '<%= target_name %>'
+extension_url = "http://cloud.github.com/downloads/#{github_account}/#{github_project}/#{project_name}.crx"
+
+root_path = Pathname.new(__FILE__).parent
+src_path = root_path.join('src')
+manifest_path = src_path.join('manifest.json')
+update_path = src_path.join('update.xml')
+
+namespace :manifest do
+  task :generate do
+    if manifest_path.exist?
+      "manifest.json is already exist."
+    else
+      puts manifest
+    end
+  end
+
+  task :update do
+  end
+
+  task :syntax do
+  end
+end
+
+task :update_xml do
+  manifest = JSON.parse manifest_path.read
+  raise 'require id & version' unless manifest['id'] && manifest['version']
+  template = <<-EOF
+<gupdate xmlns="http://www.google.com/update2/response" protocol="2.0">
+    <app appid="#{manifest['id']}">
+        <updatecheck codebase="#{extension_url}" version="#{manifest['version']}" />
+    </app>
+</gupdate>
+  EOF
+  update_path.open('w') do |f|
+    f.puts template
+  end
 end

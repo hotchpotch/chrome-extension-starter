@@ -2,10 +2,12 @@
 require 'pathname'
 require 'fileutils'
 require 'erb'
+require 'uuidtools'
 
 class ChromeExtensionStarter
   def initialize(argv)
     @target_name = argv.first
+    @uuid = UUIDTools::UUID.random_create.to_s.gsub('-', '')
     if !@target_name
       warn "usage: chrome-extension-starter myextension"
       exit 1
@@ -26,10 +28,11 @@ class ChromeExtensionStarter
 
   def generate_templates(target_path, template_path)
     FileUtils.cp_r template_path.to_s, target_path.to_s
-    Pathname.glob(target_path.to_s + "**/*") do |f|
+    Pathname.glob(target_path.to_s + "**/**/*") do |f|
       next unless f.file?
       f.open("r+") do |f|
         target_name = @target_name
+        uuid = @uuid
         content = f.read
         f.rewind
         f.puts ERB.new(content).result(binding)

@@ -63,6 +63,7 @@ spec = Gem::Specification.new do |s|
   s.add_dependency('json')
   s.add_dependency('crxmake')
   s.add_dependency('zipruby')
+  s.add_dependency('uuidtools', '>= 2.0.0')
   #s.add_dependency('activesupport', '>=1.3.1')
   #s.required_ruby_version = '>= 1.8.2'
 
