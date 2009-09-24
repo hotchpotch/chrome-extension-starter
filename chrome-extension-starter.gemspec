@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email = %q{hotchpotch@gmail.com}
   s.executables = ["chrome-extension-starter"]
   s.extra_rdoc_files = ["README.rdoc", "ChangeLog"]
-  s.files = ["README.rdoc", "ChangeLog", "Rakefile", "bin/chrome-extension-starter", "test/chrome-extension-starter_test.rb", "test/test_helper.rb", "lib/chrome_extension_starter.rb", "lib/chrome", "lib/chrome/extension", "templates/src", "templates/src/lib", "templates/src/lib/utils.js", "templates/src/toolstrips", "templates/src/toolstrips/toolstrip.html", "templates/src/toolstrips/toolstrip.js", "templates/src/background", "templates/src/background/background.html", "templates/src/background/background.js", "templates/src/manifest.json", "templates/Rakefile"]
+  s.files = ["README.rdoc", "ChangeLog", "Rakefile", "bin/chrome-extension-starter", "test/chrome-extension-starter_test.rb", "test/test_helper.rb", "lib/chrome_extension_starter.rb", "templates/src", "templates/src/lib", "templates/src/lib/utils.js", "templates/src/toolstrips", "templates/src/toolstrips/toolstrip.html", "templates/src/toolstrips/toolstrip.js", "templates/src/background", "templates/src/background/background.html", "templates/src/background/background.js", "templates/src/manifest.json", "templates/Rakefile"]
   s.homepage = %q{http://chromeextensionstarter.rubyforge.org}
   s.rdoc_options = ["--title", "chrome-extension-starter documentation", "--charset", "utf-8", "--opname", "index.html", "--line-numbers", "--main", "README.rdoc", "--inline-source", "--exclude", "^(examples|extras)/"]
   s.require_paths = ["lib"]
