@@ -13,7 +13,7 @@
 === Gem Installation
 
  gem sources -a http://gems.github.com
- gem install zipruby json Constellation-crxmake uuidtools
+ gem install zipruby json Constellation-crxmake Constellation-jsonschema uuidtools
  gem install hotchpotch-chrome-extension-starter
 
 == Features/Problems
