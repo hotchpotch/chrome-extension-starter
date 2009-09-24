@@ -1,4 +1,3 @@
-
 Gem::Specification.new do |s|
   s.name = %q{chrome-extension-starter}
   s.version = "0.0.2"
