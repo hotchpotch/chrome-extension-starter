@@ -26,7 +26,7 @@ RDOC_OPTS = [
   "--charset", "utf-8",
   "--opname", "index.html",
   "--line-numbers",
-  "--main", "README",
+  "--main", "README.rdoc",
   "--inline-source",
 ]
 
