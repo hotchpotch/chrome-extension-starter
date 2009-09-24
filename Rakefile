@@ -59,9 +59,9 @@ spec = Gem::Specification.new do |s|
   s.test_files        = Dir["test/*_test.rb"]
 
   s.add_dependency('rake')
-  s.add_dependency('jsonschema')
   s.add_dependency('json')
-  s.add_dependency('crxmake')
+  #s.add_dependency('jsonschema')
+  #s.add_dependency('crxmake')
   s.add_dependency('zipruby')
   s.add_dependency('uuidtools', '>= 2.0.0')
   #s.add_dependency('activesupport', '>=1.3.1')
@@ -100,7 +100,7 @@ Rake::RDocTask.new do |rdoc|
   if ENV['DOC_FILES']
     rdoc.rdoc_files.include(ENV['DOC_FILES'].split(/,\s*/))
   else
-    rdoc.rdoc_files.include('README', 'ChangeLog')
+    rdoc.rdoc_files.include('README.rdoc', 'ChangeLog')
     rdoc.rdoc_files.include('lib/**/*.rb')
     rdoc.rdoc_files.include('ext/**/*.c')
   end
