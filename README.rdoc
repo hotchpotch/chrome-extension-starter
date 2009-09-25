@@ -1,14 +1,11 @@
 
 = chrome-extension-starter
 
+ Google Chrome extension templates and Rakefile generator.
 
 == Description
 
 == Installation
-
-=== Archive Installation
-
- rake install
 
 === Gem Installation
 
@@ -23,7 +20,9 @@
 
  chrome-extension-starter myextension
  cd myextension
- rake
+ rake # manifest.json validate
+ rake update_xml
+ rake package
 
 == Copyright
 
