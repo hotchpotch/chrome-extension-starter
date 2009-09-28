@@ -17,7 +17,7 @@ DESCRIPTION       = ""
 RUBYFORGE_PROJECT = "chromeextensionstarter"
 HOMEPATH          = "http://#{RUBYFORGE_PROJECT}.rubyforge.org"
 BIN_FILES         = %w( chrome-extension-starter )
-VERS              = "0.1.0"
+VERS              = "0.1.1"
 
 REV = File.read(".svn/entries")[/committed-rev="(d+)"/, 1] rescue nil
 CLEAN.include ['**/.*.sw?', '*.gem', '.config']

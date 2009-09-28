@@ -5,8 +5,8 @@
   "version": "0.0.1",
   "update_url": "http://localhost/example/update.xml",
   "permissions": [
-    "http://*/",
-    "https://*/",
+    "http://*/*",
+    "https://*/*",
     "tabs"
   ],
   "background_page": "background/background.html",
